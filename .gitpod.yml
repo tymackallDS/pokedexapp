@@ -13,4 +13,5 @@ tasks:
       pip install --upgrade pip
       pip install boto3
       pip install Flask
+      pip install requests
       pip install -r requirements.txt || true
