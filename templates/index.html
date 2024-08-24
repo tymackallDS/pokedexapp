@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+</head>
+<body>
+    <h1>Welcome to the Pokédex!</h1>
+    <!-- Use a loop to display Pokémon names -->
+    <ul>
+        {% for pokemon in pokemon %}
+            <li>{{ pokemon.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
