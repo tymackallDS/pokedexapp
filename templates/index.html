@@ -7,11 +7,9 @@
 </head>
 <body>
     <h1>Welcome to the Pokédex!</h1>
-    <!-- Use a loop to display Pokémon names -->
-    <ul>
-        {% for pokemon in pokemon %}
-            <li>{{ pokemon.name }}</li>
-        {% endfor %}
-    </ul>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
 </body>
 </html>
