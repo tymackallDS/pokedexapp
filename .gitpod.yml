@@ -1,0 +1,16 @@
+# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
+# List the start up tasks. Learn more: https://www.gitpod.io/docs/configure/workspaces/tasks
+# create the virtual environemnt
+# activate the virtual environment
+# upgrade piup in the venv
+# install pip and boto3
+# attempts to install packages listed in the requirements.txt
+tasks:
+  - name: setup
+    command: |
+      python -m venv venv 
+      source venv/bin/activate
+      pip install --upgrade pip
+      pip install boto3
+      pip install Flask
+      pip install -r requirements.txt || true
